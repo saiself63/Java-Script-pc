@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("enter a vslue:"));
+        var b = parseInt(prompt("enter b vslue:"));
+        var c = parseInt(prompt("enter c vslue:"));
+        var big1, big2, big3;
+        if (a > b) {
+            if (a > c) {
+                big1 = a;
+                if (b > c) {
+                    big2 = b;
+                    big3 = c;
+                    document.write(`${big1}, ${big2} ,${big3}`);
+                }
+                else{
+                    big2=c;
+                    big3=b;
+                    document.write(`${ big1 }, ${ big2 }, ${ big3 }`);
+
+                }
+            }
+        }
+        else {
+            big1 = c;
+            if (b > a) {
+                big2 = b;
+                big3 = a;
+                document.write(`${big1}, ${big2} ,${big3}`);
+                }
+                else{
+                    big2=a;
+                    big3=b;
+                    document.write(`${ big1 }, ${ big2 }, ${ big3 }`);
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

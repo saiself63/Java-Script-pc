@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello world</h1>
+    <script>
+        var year=prompt("enter year:");
+        if(year%100==0){
+            if(year%400==0){
+                document.write(`${year} is leap year`);
+            }
+            else{
+            document.write(`${year} is not leap year`);
+              }}
+        else{
+            if(year%4==0){
+                document.write(`${year} is leap year`);
+            }
+            else{
+            document.write(`${year} is not leap year`);
+              }
+        }
+    </script>
 </body>
 </html>

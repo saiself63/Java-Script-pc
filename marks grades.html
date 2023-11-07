@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks=prompt("enter marks:");
+        if(marks<100 && marks>=90)
+        document.write(`${marks} is O grade`);
+      else if(marks<90 && marks>=80){
+        document.write(`${marks} is A grade`);
+      }
+      else if(marks<80 && marks>=70){
+        document.write(`${marks} is B grade`);
+      }
+      else if(marks<70 && marks>=60){
+        document.write(`${marks} is C grade`);
+      }
+      else if(marks<60 && marks>=50){
+        document.write(`${marks} is D grade`);
+      }
+      else if(marks>100){
+        document.write(`ur emtered marks are wrong`);
+      }
+      else{
+        document.write(`u r fail`);
+      }
+    </script>
+</body>
+</html>
