@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var n =parseInt(prompt("enter n value:"))
+         var arm=0;
+         var n1=n;
+         while(n>0){
+            arm=arm+(n%10)**4;
+            n=parseInt(n/10);
+         }
+         
+         if (n1==arm){
+            document.write(` ${arm} arm strong number`);
+         }
+         else{
+            document.write(` ${arm} not arm strong number`)
+         }
+    </script>
+</body>
+</html>

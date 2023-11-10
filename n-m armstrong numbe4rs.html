@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("ener n:"))
+        var m=parseInt(prompt("ener m:"))
+        
+        for (var i=n ;i<=m;i++){
+            // const cnt=Array.from(String(i))
+            const cnt=[...string(i)];
+            document.write(cnt);
+             var cnt1=cnt.length;
+            //  document.write(cnt1);
+            //  break;
+             var n1=i;
+            var sum=0;
+            while(n1>0)
+            {
+              sum=sum+((n1%10)**cnt1);
+              n1=parseInt(n1/10);
+            }
+            n1=i;
+            if(sum==n1){
+                document.write(`${n1} <br>`);
+            }
+        }
+
+    
+    </script>
+</body>
+</html>

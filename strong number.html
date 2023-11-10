@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        var n =parseInt(prompt("enter n value:"))
+        var n1=n;
+        var h=0;
+        var sum=0;
+        while(n>0){
+            var k=n%10;
+            sum=sum+fact(k,h);
+            n=parseInt(n/10);
+        }
+        if(sum==n1){
+        document.write(`${sum} is the strong number`)
+        }
+        else{
+            document.write(`${sum} is the strong number`)
+        }
+      
+        function fact(m,h){
+            for (var i=1;i<=m;i++){
+                h+=h*i;
+            }
+            return h;
+
+        }
+    </script>
+</body>
+</html>
