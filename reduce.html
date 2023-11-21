@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     var arr =[1,2,3,4]
+     var arr1=arr.reduce((i,j)=>{return i+j})
+     document.write(arr1)
+     document.write(`<br>`)
+
+     //difference between reduce and map
+      sum=0
+     var arr2=arr.map((i,j)=>{return sum=sum+i+j })
+     document.write(arr2)
+   </script>
+</body>
+</html>

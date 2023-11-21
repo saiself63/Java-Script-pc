@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         //it is used when we hava an array for iteration
-        arr=[3,66,7,4,56,3,5,6,43,5,6]
+        arr = [3, 66, 7, 4, 56, 3, 5, 6, 43, 5, 6]
+        document.write(`given array:${arr}`)
+        document.write(`<br>`)
+//method-1
         arr.forEach(ans);
         function ans(ele)
-        {document.write(`${ele*5},`)}
-        
+        {document.write(`ele*5 is: ${ele*5},`)}
+    document.write(`<br>`)
+
+
+//method-2
+        arr.forEach((i) => { document.write(`ele*2 is :${i * 5},`) })
+        document.write(`<br>`)
+
+//method-3
+        arr.forEach((element,index) => { document.write(`${index} is :${element} <br>`) })
     </script>
+    
 </body>
+
 </html>
