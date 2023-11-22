@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //1)Object literal
+
+        var obj={uname :"sai",id:1,class:"MCA",roll:1}
+        document.write(`${obj.uname} <br>`)
+        for(var i in obj){
+            document.write(`${i} is: ${obj[i]}<br>`)
+        }
+
+        //Object with new reference
+     
+        var obj1=new Object();
+        obj1.uname="sai";
+        obj1.mail="sai@123@gmail.com";
+        obj1.class="MCA";
+        obj1.phone=76489797;
+        var arr=[]
+        
+        for(var i in obj1){
+            arr.push(obj1[i]);
+        }
+        document.write(arr);
+
+        //object with new constructor
+
+        function user(uname,pass,clas,id){
+                this.uname=uname;
+                this.pass=pass;
+                this.class=clas;
+                this.id=id;
+        }
+        var ob1=new user("sai","sai@123","MCA",1)
+        var ob2=new user("ravi","sai@123","MCA",1)
+        var ob3=new user("gopi","sai@123","MCA",1)
+        var ob4=new user("madhu","sai@123","MCA",1)
+
+        var arr=[ob1,ob2,ob3,ob4]
+
+        arr.forEach((ob)=>{for(var ele in ob){document.write(`${ele}is :${ob[ele]}<br>`)}})
+
+        
+    </script>
+</body>
+</html>
